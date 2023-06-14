@@ -3,15 +3,10 @@ import SingleQuestion from './SingleQuestion';
 import data from './data';
 
 function App() {
-
-   const [expandedQuestionId, setExpandedQuestionId] = useState(null);
-
+const [expandedQuestionId, setExpandedQuestionId] = useState(null);
   const handleQuestionToggle = (questionId) => {
     setExpandedQuestionId(prevId => (prevId === questionId ? null : questionId));
   };
-
-
-
   return (
     <main className="container">
       <h3>Question and answer about login</h3>
